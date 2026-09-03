@@ -12,20 +12,6 @@
 - حفظ آخر 3 مدن في `localStorage` كأزرار بحث سريع.
 - زرار لجلب طقس موقعك الحالي عبر Geolocation.
 
-## التشغيل محليًا
-
-1. احصل على مفتاح API مجاني من [openweathermap.org/api](https://openweathermap.org/api) (تفعيل المفتاح ممكن ياخد لحد ساعتين بعد التسجيل).
-2. افتح `script.js` وحط المفتاح مكان:
-   ```js
-   const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
-   ```
-3. افتح `index.html` في المتصفح مباشرة، أو شغّل سيرفر بسيط:
-   ```bash
-   npx serve .
-   ```
-
-> ⚠️ **ملحوظة أمان:** حط مفتاح الـ API مباشرة في الكود مقبول لمشروع تعليمي/تجريبي بسيط، لكن متعملوش commit لمفتاح حقيقي في repo عام. للمشاريع الحقيقية، اعمل serverless function (زي Vercel Function) تخبي المفتاح كـ Environment Variable وتنادي عليها من الفرونت إند بدل ما تكشفه في كود الكلاينت.
-
 
 ## بنية المشروع 
 ```
